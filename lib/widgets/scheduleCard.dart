@@ -18,10 +18,12 @@ class ScheduleCard extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              child:
-                  Icon(Icons.check_circle, size: 28, color: Color(0xFF2CC38A))),
+          Expanded(
+            child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: Icon(Icons.check_circle,
+                    size: 28, color: Color(0xFF2CC38A))),
+          ),
           Container(
             padding: const EdgeInsets.only(right: 5),
             child: Column(
